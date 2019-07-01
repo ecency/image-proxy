@@ -17,4 +17,4 @@ RUN pip3 install -r ${APP_DIR}/requirements.txt
 
 EXPOSE 5001
 
-CMD ["gunicorn",  "app:app", "-b", "0.0.0.0:5001"]
+CMD ["gunicorn",  "app:app", "-b", "0.0.0.0:5001", "-w", "4"]
